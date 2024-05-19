@@ -1,0 +1,209 @@
+.imagen-con-hover {
+    content: "";
+    width: 400px;
+
+    float: left;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+.imagen-con-hover .imagen-enlace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+}
+
+.nav-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons button i {
+    margin-right: 5px;
+}
+
+.imagen-con-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: inherit;
+    transition: 0.3s ease-in-out;
+
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imagen-con-hover .imagen-con-hover {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagen-con-hover:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.imagen-con-hover:hover img {
+    transform: scale(1.1);
+    /* Escala la imagen al 110% en hover */
+}
+
+.imagen-con-hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.imagen-con-hover:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* Color del texto del overlay */
+    font-size: 20px;
+
+}
+
+.content h2,
+.content h3,
+.content p {
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color del fondo del overlay */
+    opacity: 0;
+    /* Hace que el overlay sea transparente inicialmente */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-con-hover:hover .overlay {
+    opacity: 1;
+    /* Hace que el overlay sea visible en hover */
+}
+
+.texto {
+    color: white;
+    /* Color del texto del overlay */
+    font-size: 20px;
+    /* Tamaño del texto del overlay */
+}
+
+.titulo {
+    text-align: center;
+    margin: 100px 0 20px;
+    /* Añadir margen superior para compensar la barra de navegación fija */
+    font-size: 2.5em;
+    /* Aumentar tamaño de la fuente */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Transformar texto a mayúsculas */
+}
+
+body {
+    background-color: #f0f0f0;
+    /* Color de fondo */
+    color: #333;
+    /* Color del texto */
+    font-family: Arial, sans-serif;
+}

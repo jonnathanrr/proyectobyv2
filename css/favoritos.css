@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}*/
+.header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.header ul {
+    padding: 0;
+    list-style: none;
+}
+.header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product {
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+.product img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.product-details {
+    padding: 15px;
+}
+.product-details h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.product-details p {
+    margin: 0 0 10px;
+}
+/* Estilos para fijar el encabezado en la parte superior y centrarlo */
+.header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding-top: 20px; /* Reducido el espacio superior del encabezado */
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    z-index: 999; /* Asegura que el encabezado esté por encima del contenido */
+    display: flex;
+
+}
+
+.container {
+    padding-top: 10px; /* Reducido el espacio entre el encabezado y el contenido */
+}
+

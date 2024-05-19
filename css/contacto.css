@@ -1,0 +1,175 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative; /* Para posicionar correctamente los enlaces */
+}
+.logo {
+    display: block;
+    width: 100%; /* Para que ocupe todo el ancho del contenedor */
+    margin-bottom: 10px; /* Añadir un pequeño espacio entre la imagen y los enlaces */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Establece los enlaces como posición absoluta */
+    left: 10px; /* Alinea los enlaces a la izquierda */
+    bottom: 10px; /* Alinea los enlaces en la parte inferior */
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Efectos al pasar el mouse sobre los enlaces */
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+ul li a:hover {
+    color: #ff6b00;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* Agrega esto al final de tu archivo contacto.css */
+
+/* Estilos para los enlaces */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block; /* Para que los elementos estén en línea */
+    margin-right: 10px; /* Espacio entre los elementos */
+    vertical-align: middle;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave para transformar y opacidad */
+}
+
+ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+ul li a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Efectos al pasar el mouse sobre los enlaces */
+ul li:hover {
+    transform: translateY(-5px); /* Levanta ligeramente el elemento */
+}
+
+ul li a:hover {
+    color: #ff6b00; /* Cambia el color del enlace al pasar el mouse */
+}
+
+
+ul li a img {
+    width: 150px; /* Ancho deseado para las imágenes */
+    height: 150px; /* Alto deseado para las imágenes */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre las imágenes */
+ul li a:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+}
+/* Agrega esto al final de tu archivo contacto.css */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos de la lista horizontalmente */
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+/* Agrega esto al final de tu archivo contacto.css */
+
+.container {
+    position: relative; /* Para establecer un contexto de posicionamiento para el contenedor */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Para posicionar los enlaces absolutamente dentro del contenedor */
+    top: 50%; /* Alinea el borde superior del contenedor de enlaces al 50% del contenedor padre */
+    left: 50%; /* Alinea el borde izquierdo del contenedor de enlaces al 50% del contenedor padre */
+    transform: translate(-90%, -90%); /* Centra el contenedor de enlaces */
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Efectos al pasar el mouse sobre los enlaces */
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+ul li a:hover {
+    color: #ff6b00;
+}
