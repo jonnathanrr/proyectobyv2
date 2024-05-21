@@ -29,7 +29,7 @@
     $totalProductos = $productos->num_rows;
     ?>
 
-    <h1 class="text-center mt-5 mb-5 fw-bold">PRODUCTOS</h1>
+    <h1 class="text-center mt-5 mb-5 fw-bold">INVENTARIO PRODUCTOS BYV</h1>
 
     <div class="container">
         <div class="row justify-content-md-center">
