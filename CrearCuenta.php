@@ -55,9 +55,6 @@
         }
     </style>
 
-
-
-    </style>
 </head>
 
 <body>
@@ -66,6 +63,17 @@
         <div class="row justify-content-center">
             <form class="col-md-6 col-lg-4 p-4 shadow-sm rounded" action="procesar_formulario.php" method="post">
                 <h3 class="text-center text-secondary mb-4">Registro de usuarios</h3>
+                <!-- Agregar mensaje de registro exitoso -->
+                <script>
+                    // Función para ocultar la alerta después de un tiempo determinado
+                    setTimeout(function() {
+                        document.querySelector('.alert').style.display = 'none';
+                    }, 1000); // Tiempo en milisegundos (en este caso, 3 segundos)
+                </script>
+                <div class="alert alert-success registro-exitoso" role="alert">
+                    Registro exitoso    
+                </div>
+
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre de la persona</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -80,7 +88,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="fecha" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    <input type="date" class="form-control" id="fecha" name="fecha_nac" required>
                 </div>
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo</label>
@@ -88,7 +96,7 @@
                 </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="submit" class="btn btn-primary me-md-2" name="btnregistrar" value="ok">Registrar</button>
-                    <a href="index.html" class="btn btn-secondary btn-salir">Salir</a>
+                    <a href="registro.php" class="btn btn-secondary btn-salir">Salir</a>
 
                 </div>
             </form>
@@ -96,6 +104,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
