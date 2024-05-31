@@ -15,13 +15,16 @@
         </thead>
         <tbody>
             <?php
-            foreach ($productos as $producto) { ?>
+            foreach ($productos as $producto) {
+                // Formatear el precio
+                $precio_formateado = number_format($producto['precio'], 0, ',', '.');
+            ?>
                 <tr id="producto_<?php echo $producto['id']; ?>">
                     <th scope='row'><?php echo $producto['id']; ?></th>
                     <td><?php echo $producto['nombre']; ?></td>
-                    <td > <?php echo $producto['marca']; ?></td>
+                    <td><?php echo $producto['marca']; ?></td>
                     <td><?php echo $producto['categoria']; ?></td>
-                    <td class="text-center"><?php echo $producto['precio']; ?></td>
+                    <td class="text-center"><?php echo $precio_formateado; ?></td>
                     <td><?php echo $producto['descripcion']; ?></td>
                     <td class="text-center">
                         <?php

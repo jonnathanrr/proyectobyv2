@@ -1,0 +1,70 @@
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/bol16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; /* Color del texto */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table img {
+    max-width: 50px;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.table img:hover {
+    transform: scale(2.0); /* Aumentar el tamaño al 120% */
+}
+
+/* Estilos para los encabezados de la tabla */
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Estilos para las filas impares de la tabla */
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(221, 167, 8, 0.1);
+}
+/* Estilos para el título fijo */
+h2 {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Ajusta el color de fondo según tu diseño */
+    z-index: 1000; /* Asegura que el título se muestre sobre otros elementos */
+    padding: 10px 0; /* Añade espacio alrededor del título para mejorar la apariencia */
+    margin: 0; /* Elimina cualquier margen para un aspecto más limpio */
+    width: 100%; /* Ajusta el ancho al 100% para que ocupe todo el ancho disponible */
+}
+
+/* Estilos para fijar el encabezado de la tabla */
+.table thead {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.table-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container tbody tr:hover {
+    background-color: rgba(228, 188, 11, 0.05);
+}
+
